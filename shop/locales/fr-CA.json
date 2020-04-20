@@ -1,0 +1,71 @@
+{
+  "shopify": {
+    "checkout": {
+      "general": {
+        "continue_to_shipping_method": "Passer au mode de livraison",
+        "back_to_shipping_method": "Retourner au mode de livraison",
+        "edit_shipping_address": "Modifier adresse de livraison",
+        "edit_shipping_method": "Modifier mode de livraison"
+      },
+      "contact": {
+        "shipping_address_title": "Adresse de livraison"
+      },
+      "order_summary": {
+        "free_shipping_discount_label": "Livraison gratuite",
+        "discount_requires_customer_notice": "Veuillez fournir vos informations de livraison pour appliquer le code de remise {{code}}",
+        "shipping_information_does_not_meet_discount_requirements_notice": "Vos informations de livraison ne remplissent pas les exigences du code de remise {{code}}",
+        "shipping_label": "Livraison"
+      },
+      "shipping": {
+        "title": "Mode de livraison",
+        "waiting_on_rate_notice": "Veuillez patienter pendant que nous cherchons des frais de port disponibles...",
+        "no_rates_for_cart_or_destination_notice": "Aucun mode de livraison n'est disponible pour votre panier ou destination.",
+        "no_rates_for_country_notice": "Nous ne livrons pas en {{ country }}.",
+        "please_enter_your_shipping_information_notice": "Veuillez renseigner vos informations de livraison"
+      },
+      "payment": {
+        "same_billing_address_label": "La même que l'adresse de livraison"
+      },
+      "shipping_errors": {
+        "shipping_method": "Votre panier a été modifié et les frais de port que vous aviez sélectionnés ne s'appliquent plus. Veuillez sélectionner de nouveaux frais de port."
+      },
+      "thank_you": {
+        "shipping_information_title": "Informations de livraison",
+        "shipping_address_title": "Adresse de livraison",
+        "shipping_method_title": "Mode de livraison",
+        "marker": {
+          "shipping": "Adresse de livraison",
+          "current": "Point de livraison actuel"
+        },
+        "confirmed_description_html": "Nous avons accepté votre commande et procédons à sa préparation. Un e-mail de confirmation vous a été envoyé à {{ email }}. Consultez cette page pour connaître le statut de votre livraison.",
+        "no_tracking_number": "Il n'existe aucun numéro de suivi pour cette livraison.",
+        "unfulfilled_items_title": "Livraison en cours de préparation",
+        "unfulfilled_items_description": "Nous préparons actuellement les articles à vous livrer.",
+        "fulfillment": {
+          "unfulfilled_table_title": "Articles en cours de préparation",
+          "fulfilled_table_title": "Article compris dans cette livraison"
+        },
+        "login_title": "Connectez-vous pour consulter tous les détails de la livraison",
+        "failed_title": "Nous n'avons pas pu livrer votre commande",
+        "delivered_description_html": "Votre commande a été livrée à l'adresse que vous nous avez fournie. Si vous ne l'avez pas reçue ou si vous rencontrez d'autres problèmes, veuillez {{ contact_us }}.",
+        "delivered_title": "Votre commande a été livrée",
+        "attempted_delivery_description_html": "Une tentative de livraison de votre commande n'a pas abouti. Veuillez {{ contact_us }} pour planifier une autre tentative de livraison.",
+        "attempted_delivery_title": "Nous avons essayé de livrer votre commande",
+        "out_for_delivery_description_html": "Votre commande se trouve dans un camion de livraison et devrait arriver aujourd'hui. Si vous ne l'avez pas reçue d'ici 2 jours, veuillez {{ contact_us }}.",
+        "out_for_delivery_title": "Votre commande est en cours de livraison",
+        "in_transit_description": "Consultez cette page pour connaître le statut de votre livraison.",
+        "in_transit_title": "Votre commande est en chemin",
+        "confirmed_title": "Votre commande est confirmée",
+        "order_updates_subscribe_to_email_notifications": "Recevez les mises à jour par courrier électronique",
+        "order_updates_subscribe_to_phone_notifications": "Recevez les mises à jour par email ou par SMS",
+        "order_updates_subscribe_to_email_or_phone_notifications": "Recevez les mises à jour par SMS"
+      }
+    },
+    "notices": {
+      "cart": {
+        "shipping_address_not_required": "Ce panier ne nécessite pas de livraison",
+        "shipping_address_invalid": "Adresse de livraison invalide"
+      }
+    }
+  }
+}
