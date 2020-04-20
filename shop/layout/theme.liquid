@@ -72,6 +72,9 @@
     {{ 'theme.scss.css' | asset_url | stylesheet_tag }}
     <link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/shopify-plyr/v1.0/shopify-plyr.css">
 
+   {% comment %}jquery {% endcomment %}
+    <script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+   
     {% comment %}theme-object{% endcomment %}
     <script>
       window.Theme = window.Theme || {};
@@ -137,6 +140,8 @@
       Modal container, used on Collections, Password, and QuickShop
     {% endcomment %}
     {% include 'modal' %}
+
+
 
     {% comment %}
       This is the PhotoSwipe dialog which needs to be in the base page

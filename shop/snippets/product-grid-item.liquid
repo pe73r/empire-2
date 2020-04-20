@@ -338,6 +338,21 @@
       {% endif %}
     </div>
 
+    {% unless section.settings.display-quantity == false %}
+      <form class="FeaturedCollectionForm" method="post" action="/cart/add">
+          <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+          <div class="qtydiv">
+                 <div class="qtybox">
+                   <span class="btnqty qtyminus icon icon-minus">-</span>
+                   <input type="text" name="quantity" value="1" min="1" class="quantity-selector quantity-input" readonly="">
+                   <span class="btnqty qtyplus icon icon-plus">+</span>
+                 </div>
+          </div>
+          <input type="submit" value="{% if section.settings.button-text != blank %}{{ section.settings.button-text }} {% else %} Ajouter au panier {% endif %}" class="FeaturedCollectionButton"/>
+      </form>
+    {% endunless %}
+
+
     {% unless recently_viewed %}
       {% if quick_shop_display != 'disabled' or atc_display != 'disabled' %}
         {% comment %}
