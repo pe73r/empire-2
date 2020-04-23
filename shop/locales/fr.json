@@ -84,6 +84,16 @@
       "continue_shopping": "Continuez vos achats"
     }
   },
+  "structured_data": {
+    "breadcrumbs": {
+      "cart": "Panier",
+      "collections": "Collections",
+      "page": "Page {{ page }}",
+      "products": "Des produits",
+      "search": "Chercher",
+      "tags_html": "Tagué \"{{tags}}\""
+    }
+  },
   "general": {
     "breadcrumbs": {
       "home": "Accueil",
@@ -95,6 +105,15 @@
       "see_more": "Voir plus",
       "see_less": "Voir moins"
     },
+    "pagination": {
+      "prev": "précédent",
+      "next": "Suivant"
+    },
+    "title": {
+      "tags": "- Taggé \"{{tags}}\"",
+      "page": "— Page {{ page }}",
+      "shop": ""
+    },
     "newsletter": {
       "subscribe": "S'inscrire",
       "placeholder": "Adresse e-mail",
@@ -105,30 +124,29 @@
       "title_short": "Partager:"
     },
     "accessibility": {
+      "skip_to_content": "Aller au contenu",
       "cart": "Voir le panier",
       "menu": "Menu",
       "rss": "RSS",
       "search": "Chercher",
-      "close": "proche",
-      "nav_main": "Main",
-      "nav_footer": "Bas de page",
-      "nav_product_thumbnails": "Vignettes de produit",
-      "social_media_icon": "Retrouvez-nous sur {{platform}}",
-      "share_on_facebook": "Partager sur Facebook",
-      "share_on_google": "Partager sur Google+",
-      "share_on_pinterest": "Pin on Pinterest",
-      "share_on_twitter": "Tweet sur Twitter",
-      "skip_to_content": "Aller au contenu",
       "search_results": "Résultats de recherche pour «{{terms}}»",
       "search_products": "Des produits",
       "swatch_options": "{{swatch_trigger}} options pour {{product_title}}",
       "swatches_toggle": "Basculer les échantillons",
+      "close": "proche",
+      "nav_main": "Main",
       "nav_secondary": "Secondaire",
       "nav_sidebar": "Barre latérale",
+      "nav_footer": "Bas de page",
       "nav_product_thumbnail": "la vignette",
       "product_zoom_dialog": "Product zoom dialog",
       "nav_collection_utilities": "Collection utilities",
-      "share_on_linkedin": "Partager sur LinkedIn"
+      "social_media_icon": "Retrouvez-nous sur {{platform}}",
+      "share_on_facebook": "Partager sur Facebook",
+      "share_on_pinterest": "Pin on Pinterest",
+      "share_on_twitter": "Tweet sur Twitter",
+      "share_on_linkedin": "Partager sur LinkedIn",
+      "nav_breadcrumbs": "Nav"
     },
     "time": {
       "clear": "Effacer récemment affiché",
@@ -140,15 +158,6 @@
       "hour": "heure",
       "hours": "heures",
       "ago": "depuis"
-    },
-    "pagination": {
-      "prev": "précédent",
-      "next": "Suivant"
-    },
-    "title": {
-      "tags": "- Taggé \"{{tags}}\"",
-      "page": "— Page {{ page }}",
-      "shop": "- {{ boutique }}"
     }
   },
   "header": {
@@ -156,9 +165,6 @@
       "title": "Mon compte",
       "login": "S'identifier",
       "logout": "Se déconnecter"
-    },
-    "converter": {
-      "label": "Changez votre devise\n"
     }
   },
   "footer": {
@@ -204,8 +210,7 @@
       "special_instructions": "Instructions spéciales",
       "shipping_at_checkout": "Frais d'expédition et taxes calculés au moment du paiement",
       "taxes_at_checkout": "Taxes calculées à la caisse",
-      "cart_empty": "Votre panier est vide",
-      "stock_limit": "Vous ne pouvez avoir que {{quantité}} {{title}} dans votre panier."
+      "cart_empty": "Votre panier est vide"
     },
     "shipping": {
       "calculate_shipping": "Calculer Frais de port",
@@ -299,7 +304,6 @@
     },
     "order": {
       "title": "Commande {{order_number}}",
-      "subtitle": "Détails de la commande",
       "date": "Placé le {{date}}",
       "cancelled": "Commande annulée le {{date}}",
       "cancelled_reason": "Raison: {{reason}}",
@@ -347,8 +351,8 @@
     "issued": {
       "title_html": "Voici votre {{value}} carte-cadeau pour {{shop}}!",
       "subtext": "Votre carte cadeau",
-      "disabled": "désactivé",
-      "expired": "Expiré le {{expiration}}",
+      "disabled": "désactivée",
+      "expired": "Expirée le {{expiration}}",
       "active": "Expire le {{expiration}}",
       "redeem_html": "Utilisez ce code à la caisse pour utiliser votre carte-cadeau {{value}}",
       "shop_link": "Commencez vos achats",
@@ -364,8 +368,8 @@
     "password_entry": {
       "title": "Entrez dans le magasin en utilisant un mot de passe",
       "password": "Mot de passe",
-      "store_owner": "Êtes-vous le propriétaire du magasin?",
       "submit": "Soumettre",
+      "store_owner": "Êtes-vous le propriétaire du magasin?",
       "log_in": "Connectez-vous ici."
     },
     "mailing_list": {
@@ -386,15 +390,7 @@
       "remove_all": "Supprimer tous les filtres"
     },
     "sort_by": {
-      "title": "Trier par",
-      "manual": "En vedette",
-      "price_ascending": "Prix ​​croissant",
-      "price_descending": "Prix: du plus élevé au plus bas",
-      "title_ascending": "AZ",
-      "title_descending": "ZA",
-      "created_ascending": "Du plus ancien au plus récent",
-      "created_descending": "Du plus récent au plus ancien",
-      "best_selling": "Meilleure vente"
+      "title": "Trier par"
     },
     "show_per_page": {
       "title": "Montrer"
@@ -412,12 +408,14 @@
       "by_vendor": "Par vendeur }}",
       "by_vendor_html": "par {{vendor_link}}",
       "sku_html": "<strong> SKU <\/strong> <span data-product-sku> {{sku}}",
-      "related_products_title": "Produits connexes",
       "customer_reviews_title": "Avis des clients",
       "zoom": "Cliquez pour agrandir",
       "zoomTap": "Appuyez ou pincez pour zoomer",
       "zoomTapMobile": "Appuyez pour zoomer",
       "discounts": "Remises"
+    },
+    "media": {
+      "view_in_your_space": "Voir dans votre espace"
     },
     "item": {
       "badges": {
@@ -427,14 +425,14 @@
         "sold_out": "Épuisé"
       },
       "price": {
-        "range_html": "<span class = \"price - label\"> from <\/span> {{price}}",
         "original": "Prix ​​d'origine",
         "current": "Prix ​​actuel",
-        "total_line_price": "Prix ​​total de la ligne"
+        "total_line_price": "Prix ​​total de la ligne",
+        "range_html": "<span class = \"price - label\"> <\/span> {{price}}"
       }
     },
     "buttons": {
-      "quick_shop": "Boutique rapide",
+      "quick_shop": "Achat rapide",
       "add_to_cart": "Ajouter au panier",
       "choose_options": "Choisissez les options",
       "view_details": "Voir tous les détails",
@@ -443,13 +441,10 @@
     "status": {
       "sold_out": "Épuisé"
     },
-    "media": {
-      "view_in_your_space": "Voir dans votre espace"
-    },
     "color_swatches": {
       "swatches_count": {
-        "one": "{{count}} couleur disponible",
-        "other": "{{count}} couleurs disponibles"
+        "one": "{{ count }} couleur disponible",
+        "other": "{{ count }} couleurs disponibles"
       }
     }
   },
@@ -458,7 +453,7 @@
       "product_added": "Ajouté à votre panier:",
       "sub_total": "Sous-total du panier",
       "view_cart_html": "Voir le panier ({{count}})",
-      "checkout": "Check-out"
+      "checkout": "Commander"
     }
   },
   "search": {
@@ -474,33 +469,33 @@
         "one": "Un résultat pour \"{{terms}}\"",
         "other": "Résultats de recherche pour «{{terms}}» ({{count}})"
       },
-      "view_all_results": "Afficher tous les résultats",
-      "view_all_products": "Afficher tous les produits",
-      "no_search_performed": "Utilisez la barre de recherche ci-dessus pour effectuer une recherche.",
-      "no_results_title": "Aucun résultat pour «{{terms}}».",
-      "no_results_products_title": "Aucun produit pour «{{terms}}».",
-      "no_more_results_products_title": "Plus de produits pour «{{terms}}».",
-      "no_results_products_message": "Désolé, nous n'avons trouvé aucune correspondance.",
-      "pages_and_posts_title": "Pages et messages",
-      "pages_and_posts_no_results": "Aucun résultat.",
-      "pages_title": "Pages",
-      "posts_title": "Articles",
       "breadcrumbs_count_when_filtered": {
         "zero": "Aucun résultat pour «{{terms}}» dans {{category}}",
         "one": "Un résultat pour «{{terms}}» dans {{category}}",
         "other": "Résultats de recherche pour «{{terms}}» dans {{category}} ({{count}})"
       },
+      "view_all_results": "Afficher tous les résultats",
+      "view_all_products": "Afficher tous les produits",
+      "no_search_performed": "Utilisez la barre de recherche ci-dessus pour effectuer une recherche.",
+      "no_results_title": "Aucun résultat pour «{{terms}}».",
+      "no_results_products_title": "Aucun produit pour «{{terms}}».",
       "no_results_products_title_in_category": "Aucun produit pour «{{terms}}» dans {{category}}.",
-      "no_more_results_products_title_in_category": "Plus de produits pour «{{terms}}» dans {{category}}."
+      "no_more_results_products_title": "Plus de produits pour «{{terms}}».",
+      "no_more_results_products_title_in_category": "Plus de produits pour «{{terms}}» dans {{category}}.",
+      "no_results_products_message": "Désolé, nous n'avons trouvé aucune correspondance.",
+      "pages_and_posts_title": "Pages et messages",
+      "pages_and_posts_no_results": "Aucun résultat.",
+      "pages_title": "Pages",
+      "posts_title": "Articles"
     }
   },
   "onboarding": {
     "article": {
-      "title": "Titre",
-      "author_name": "Le nom de l'auteur"
+      "title": "Titre de l'article",
+      "author_name": "Nom de l'auteur"
     },
     "collection": {
-      "title": "Titre de la collection "
+      "title": "Titre de la collection"
     },
     "featured_collection": {
       "title": "Collection",
@@ -512,24 +507,14 @@
     },
     "product": {
       "title": "Titre du produit",
-      "vendor": "Fournisseur de produit",
-      "by_vendor": "par fournisseur de produits"
+      "vendor": "Fournisseur ",
+      "by_vendor": "par fournisseur "
     },
     "twitter": {
       "title": "Fil Twitter",
       "tweet_html": "Connectez votre compte Twitter pour engager les clients sur et hors de votre site!",
       "username": "Nom d'utilisateur",
       "time": "il y a 8 heures"
-    }
-  },
-  "structured_data": {
-    "breadcrumbs": {
-      "cart": "Panier",
-      "collections": "Collections",
-      "page": "Page {{ page }}",
-      "products": "Des produits",
-      "search": "Chercher",
-      "tags_html": "Tagué \"{{tags}}\""
     }
   }
 }

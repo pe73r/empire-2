@@ -216,7 +216,7 @@
     data-recently-viewed-card
   {% endif %}
 >
-  <div class="productitem" data-product-item-content>
+  <div class="productitem relative" data-product-item-content>
     {{ recently_viewed_header }}
     <a
       class="productitem--image-link"
@@ -338,19 +338,48 @@
       {% endif %}
     </div>
 
-    {% unless section.settings.display-quantity == false %}
-      <form class="FeaturedCollectionForm" method="post" action="/cart/add">
-          <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-          <div class="qtydiv">
-                 <div class="qtybox">
-                   <span class="btnqty qtyminus icon icon-minus">-</span>
-                   <input type="text" name="quantity" value="1" min="1" class="quantity-selector quantity-input" readonly="">
-                   <span class="btnqty qtyplus icon icon-plus">+</span>
-                 </div>
-          </div>
-          <input type="submit" value="{% if section.settings.button-text != blank %}{{ section.settings.button-text }} {% else %} Ajouter au panier {% endif %}" class="FeaturedCollectionButton"/>
-      </form>
-    {% endunless %}
+    {% if section.settings.display-quantity == true %}
+      <div class="GridItemBox relative">
+         <div class="GridItemButtons">
+          {% if product.variants.size > 1 %}
+           {% assign quick_shop_text = 'product.buttons.quick_shop' | t %}
+           {% assign quick_shop_classes = 'productitem--action-trigger button-secondary' %}
+           <div class="VariantsButton">
+              <div
+                class="
+                  variants--button
+                  productitem--action
+                  quickshop-button
+                  {% if quick_shop_display == 'desktop' %}productitem-action--desktop{% endif %}
+                "
+              >
+                <button
+                  class="{{ quick_shop_classes }}"
+                  data-quickshop-full
+                  {% if settings.gallery_thumbnail_position == 'left' %}data-thumbs-left{% endif %}
+                  type="button"
+                >
+                   {{ section.settings.button-variants }}  
+                </button>
+              </div>
+            </div>
+          {% else %}
+            <form class="FeaturedCollectionForm" method="post" action="/cart/add">
+                <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+                <div class="qtydiv">
+                       <div class="qtybox">
+                         <span class="btnqty qtyminus icon icon-minus">-</span>
+                         <input type="text" name="quantity" value="1" min="1" class="quantity-selector quantity-input" readonly="">
+                         <span class="btnqty qtyplus icon icon-plus">+</span>
+                       </div>
+                </div>
+
+                <input type="submit" value="{% if section.settings.button-text != blank %}{{ section.settings.button-text }} {% else %} Ajouter au panier {% endif %}" class="FeaturedCollectionButton"/>
+            </form>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
 
 
     {% unless recently_viewed %}
@@ -393,7 +422,7 @@
           {% endif %}
 
           {% if quick_shop_display != 'disabled' %}
-            <div
+            <!-- <div
               class="
                 productitem--action
                 quickshop-button
@@ -408,11 +437,11 @@
               >
                 {{ quick_shop_text }}
               </button>
-            </div>
+            </div> -->
           {% endif %}
 
           {% if atc_display != 'disabled' %}
-            <div
+            <!-- <div
               class="
                 productitem--action
                 atc--button
@@ -438,10 +467,10 @@
                   {%- include 'icon-spinner' -%}
                 </span>
               </button>
-            </div>
+            </div> -->
           {% endif %}
-
         </div>
+
       {% endif %}
     {% endunless %}
   </div>

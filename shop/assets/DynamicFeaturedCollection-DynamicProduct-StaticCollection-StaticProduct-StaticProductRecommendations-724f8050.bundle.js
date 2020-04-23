@@ -1553,7 +1553,7 @@ var ProductDetails_ProductDetails = /*#__PURE__*/function () {
     };
     this.forms = new Forms["a" /* default */](this.$form);
 
-    if (this.product && this.product.media.length) {
+    if (this.product && this.product.media) {
       this.gallery = new ProductGallery_ProductGallery({
         el: options.gallery,
         settings: this.settings,
@@ -1615,7 +1615,10 @@ var ProductDetails_ProductDetails = /*#__PURE__*/function () {
 
 
       this.$productVariants.val(data.variant.id);
-      this.gallery.selectMediaByVariant(variant); // Update Variant information
+      
+      if (this.gallery) {
+        this.gallery.selectMediaByVariant(variant); // Update Variant information  
+      }
 
       this._updatePrice(variant);
 

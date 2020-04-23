@@ -4,10 +4,10 @@
     "color_headings": "#484848",
     "color_text": "#4d4d4d",
     "color_text_light": "#949494",
-    "color_links": "#e32619",
-    "color_button_background": "#e3be19",
-    "color_button_text": "#ffffff",
-    "color_button_secondary_background": "#23c1e8",
+    "color_links": "#030303",
+    "color_button_background": "#f8e865",
+    "color_button_text": "#4d4d4d",
+    "color_button_secondary_background": "#7c9d50",
     "color_button_secondary_text": "#f7f7f7",
     "color_button_secondary_border": "#dddddd",
     "color_header_background": "#ffffff",
@@ -15,7 +15,7 @@
     "color_input_text": "#4d4d4d",
     "color_input_background": "#ffffff",
     "color_input_border": "#dddddd",
-    "color_product_sale_accent": "#e32619",
+    "color_product_sale_accent": "#000000",
     "color_product_review_star": "#f6c347",
     "color_footer_background": "#ffffff",
     "color_footer_text": "#686868",
@@ -37,27 +37,27 @@
     "type_section_capitalize": false,
     "type_section_spacing": 0,
     "layout_max_width": 1400,
-    "product_show_vendor": true,
+    "product_show_vendor": false,
     "product_show_sku": false,
     "product_option_style": "select",
     "product_sales_badge": true,
-    "product_sales_badge_style": "money",
-    "product_social_sharing": true,
-    "product_ratings_reviews": true,
+    "product_sales_badge_style": "text",
+    "product_social_sharing": false,
+    "product_ratings_reviews": false,
     "product_ratings_star_display": "prod-page",
     "product_grid_show_second_image": false,
     "product_grid_emphasize_price": false,
     "product_grid_image_style": "natural",
     "product_grid_image_crop": false,
-    "product_grid_show_quickshop": "always",
-    "product_grid_show_atc": "always",
-    "quickshop_show_dcb": true,
-    "quickshop_product_cart_redirect": false,
+    "product_grid_show_quickshop": "disabled",
+    "product_grid_show_atc": "disabled",
+    "quickshop_show_dcb": false,
+    "quickshop_product_cart_redirect": true,
     "quickshop_gallery_aspect_ratio": "natural",
-    "quickshop_gallery_image_crop": false,
+    "quickshop_gallery_image_crop": true,
     "quickshop_gallery_thumbnail_position": "below",
-    "quickshop_gallery_video_autoplay": true,
-    "quickshop_gallery_video_looping": true,
+    "quickshop_gallery_video_autoplay": false,
+    "quickshop_gallery_video_looping": false,
     "quickshop_gallery_hover_zoom": "disabled",
     "swatches_enable": true,
     "swatches_swatch_trigger": "Color",
@@ -148,65 +148,25 @@
           "1572476394007"
         ],
         "settings": {
-          "sticky_header": false,
+          "sticky_header": true,
           "full_width_header": false,
           "logo": "",
           "logo_height": 40,
           "logo_width": 150,
+          "show-search": true,
           "filter_search_by": "disabled",
           "enable_live_search": true,
-          "show_mobile_search_bar": true,
+          "show_mobile_search_bar": false,
           "enable_live_search_images": true,
-          "enable_live_search_articles_pages": true,
-          "quick_links": "",
+          "enable_live_search_articles_pages": false,
+          "quick_links": "main-menu",
           "menu": "main-menu",
-          "small_promo_heading": "Free Shipping",
-          "small_promo_text": "<p>on all orders over $75<\/p>",
-          "small_promo_text_mobile": "<p>on all orders over $75<\/p>",
+          "small_promo_heading": "Livraison gratuite",
+          "small_promo_text": "<p>&agrave; partir de 100&euro; d'achat<\/p>",
+          "small_promo_text_mobile": "<p>&agrave; partir de 100&euro; d'achat<\/p>",
           "small_promo_link": "",
           "small_promo_icon": "icon-delivery",
           "image": ""
-        }
-      },
-      "1520634789686": {
-        "type": "dynamic-featured-product",
-        "settings": {
-          "product": "",
-          "show_dcb": false,
-          "product_cart_redirect": false,
-          "gallery_aspect_ratio": "natural",
-          "gallery_image_crop": false,
-          "gallery_thumbnail_position": "below",
-          "gallery_video_autoplay": true,
-          "gallery_video_looping": true,
-          "gallery_hover_zoom": "disabled"
-        }
-      },
-      "1498182734213": {
-        "type": "dynamic-twitter-feed",
-        "settings": {
-          "title": "Twitter feed",
-          "username": "",
-          "retweets": false,
-          "images": false
-        }
-      },
-      "1517239645202": {
-        "type": "dynamic-search",
-        "settings": {
-          "title": "Search",
-          "text": "Use this section to help customers find the products they're looking for.",
-          "placeholder": "What are you looking for?",
-          "filter_search_by": "disabled",
-          "enable_live_search": true,
-          "enable_live_search_images": true,
-          "enable_live_search_articles_pages": false,
-          "image": "",
-          "position": "top-center",
-          "show-overlay": true,
-          "color": "#4d4d4d",
-          "background": "#ffffff",
-          "opacity": 75
         }
       },
       "static-blog": {
@@ -220,105 +180,9 @@
           "posts_per_page_range": 9
         }
       },
-      "1493143038057": {
-        "type": "dynamic-promo-mosaic",
-        "blocks": {
-          "1493143038057-0": {
-            "type": "promotion",
-            "settings": {
-              "image": "",
-              "title": "Mosaic",
-              "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-              "color": "#4d4d4d",
-              "block_link": "",
-              "button_text": "",
-              "button_style": "secondary",
-              "show_overlay": false,
-              "background": "",
-              "opacity": 1
-            }
-          },
-          "1493143038057-1": {
-            "type": "promotion",
-            "settings": {
-              "image": "",
-              "title": "Mosaic",
-              "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-              "color": "#4d4d4d",
-              "block_link": "",
-              "button_text": "",
-              "button_style": "primary",
-              "show_overlay": false,
-              "background": "",
-              "opacity": 50
-            }
-          },
-          "1493143038057-2": {
-            "type": "promotion",
-            "settings": {
-              "image": "",
-              "title": "Mosaic",
-              "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-              "color": "#4d4d4d",
-              "block_link": "",
-              "button_text": "",
-              "button_style": "primary",
-              "show_overlay": false,
-              "background": "",
-              "opacity": 50
-            }
-          },
-          "1493143583401": {
-            "type": "promotion",
-            "settings": {
-              "image": "",
-              "title": "Mosaic",
-              "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-              "color": "#4d4d4d",
-              "block_link": "",
-              "button_text": "",
-              "button_style": "primary",
-              "show_overlay": false,
-              "background": "",
-              "opacity": 50
-            }
-          }
-        },
-        "block_order": [
-          "1493143038057-0",
-          "1493143038057-1",
-          "1493143038057-2",
-          "1493143583401"
-        ],
-        "settings": {
-          "title": "",
-          "section_height": "small",
-          "text_alignment": "top-left",
-          "maintain_aspect_ratio": false,
-          "compress_blocks": false
-        }
-      },
       "static-footer": {
         "type": "static-footer",
         "blocks": {
-          "static-footer-0": {
-            "type": "menu",
-            "settings": {
-              "menu": "main-menu"
-            }
-          },
-          "1498182586280": {
-            "type": "menu",
-            "settings": {
-              "menu": "main-menu"
-            }
-          },
-          "1498182572847": {
-            "type": "menu",
-            "settings": {
-              "menu": "main-menu"
-            }
-          },
           "1493171899575": {
             "type": "social_accounts",
             "settings": {
@@ -333,48 +197,14 @@
           }
         },
         "block_order": [
-          "static-footer-0",
-          "1498182586280",
-          "1498182572847",
           "1493171899575",
           "static-footer-1"
         ],
         "settings": {
           "payment_icons": false,
-          "show_locale_selector": true,
-          "show_currency_selector": true,
+          "show_locale_selector": false,
+          "show_currency_selector": false,
           "additional_menu": "footer"
-        }
-      },
-      "1493145778308": {
-        "type": "dynamic-promo-grid",
-        "blocks": {
-          "1493145778308-0": {
-            "type": "promotion",
-            "settings": {
-              "image": "",
-              "title": "Grid",
-              "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-              "color": "#4d4d4d",
-              "block_link": "",
-              "button_text": "",
-              "button_style": "primary",
-              "promo_width": "full-width",
-              "show_overlay": false,
-              "background": "",
-              "opacity": 50
-            }
-          }
-        },
-        "block_order": [
-          "1493145778308-0"
-        ],
-        "settings": {
-          "title": "Grid",
-          "section_height": "medium",
-          "text_alignment": "center-center",
-          "maintain_aspect_ratio": true,
-          "compress_blocks": false
         }
       },
       "static-highlights-banners": {
@@ -383,9 +213,9 @@
           "static-highlights-banners-0": {
             "type": "highlight",
             "settings": {
-              "icon": "icon-delivery",
+              "icon": "icon-store",
               "image": "",
-              "title": "Free Shipping",
+              "title": "1. Commandez",
               "text": "<p>When you spend $100+<\/p>",
               "link": ""
             }
@@ -393,9 +223,9 @@
           "static-highlights-banners-1": {
             "type": "highlight",
             "settings": {
-              "icon": "icon-cell-phone",
+              "icon": "icon-store",
               "image": "",
-              "title": "Give Us A Call",
+              "title": "2. Give Us A Call",
               "text": "<p>+1 (201) 555-5555<\/p>",
               "link": ""
             }
@@ -428,26 +258,10 @@
           "static-highlights-banners-3"
         ],
         "settings": {
-          "show_highlights_banner": false,
+          "show_highlights_banner": true,
           "color": "#4d4d4d",
           "icon_color": "#4d4d4d",
           "background_color": "#f8f8f8"
-        }
-      },
-      "1521054862775": {
-        "type": "dynamic-video",
-        "settings": {
-          "title": "Video",
-          "url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-          "show_caption": false,
-          "caption": "<p>A short description of the video.<\/p>",
-          "autoplay": false,
-          "aspect_ratio": "16-9",
-          "cover": "",
-          "position": "center-center",
-          "show_overlay": false,
-          "background": "#000000",
-          "opacity": 50
         }
       },
       "static-collection": {
@@ -478,16 +292,18 @@
           "1572651808624"
         ],
         "settings": {
-          "show_collection_image": true,
+          "show_collection_image": false,
           "products_per_page_range": 24,
           "products_per_row": "4",
-          "sort_by": true,
+          "display-quantity": true,
+          "button-text": "Ajouter au panier",
+          "sort_by": false,
           "show_by": true,
           "grid_list": true,
           "default_view": "grid-view",
-          "show_sidebar": true,
+          "show_sidebar": false,
           "show_prod_count": true,
-          "filter_style": "groups",
+          "filter_style": "none",
           "filter_limit": "5",
           "filter_position": "above_menus",
           "grid_categories": "",
@@ -502,125 +318,32 @@
           "static-slideshow-0": {
             "type": "slide",
             "settings": {
-              "background_image": "",
-              "title": "Slideshow",
+              "background_image": "shopify:\/\/shop_images\/Sans_titre_1.png",
+              "title": "Livraison Vendredi et proche banlieue",
               "text": "Introduce customers to your shop with lifestyle and product imagery",
               "color": "#ffffff",
               "link": "",
-              "text_alignment": "center",
-              "button_one_label": "Button",
+              "text_alignment": "left",
+              "button_one_label": "",
               "button_one_link": "",
               "button_one_style": "primary",
               "button_two_label": "",
               "button_two_link": "",
               "button_two_style": "primary",
               "show_overlay": true,
-              "overlay_color": "#000000",
-              "overlay_opacity": 50
-            }
-          },
-          "static-slideshow-1": {
-            "type": "slide",
-            "settings": {
-              "background_image": "",
-              "title": "Slideshow",
-              "text": "Introduce customers to your shop with lifestyle and product imagery",
-              "color": "#ffffff",
-              "link": "",
-              "text_alignment": "center",
-              "button_one_label": "Button",
-              "button_one_link": "",
-              "button_one_style": "primary",
-              "button_two_label": "",
-              "button_two_link": "",
-              "button_two_style": "primary",
-              "show_overlay": true,
-              "overlay_color": "#000000",
-              "overlay_opacity": 50
+              "overlay_color": "#197bbd",
+              "overlay_opacity": 18
             }
           }
         },
         "block_order": [
-          "static-slideshow-0",
-          "static-slideshow-1"
+          "static-slideshow-0"
         ],
         "settings": {
-          "show_slideshow": false,
-          "enable_autoplay": true,
+          "show_slideshow": true,
+          "enable_autoplay": false,
           "autoplay_duration": 8,
-          "slideshow_height": "medium"
-        }
-      },
-      "1493163784784": {
-        "type": "dynamic-featured-collection",
-        "blocks": {
-          "1587378057531": {
-            "type": "title_card",
-            "settings": {
-              "position": "beginning",
-              "pre_heading": "Shop this",
-              "heading": "Collection",
-              "text_color": "#ffffff",
-              "overlay_color": "#000000",
-              "overlay_opacity": 50,
-              "image": ""
-            }
-          }
-        },
-        "block_order": [
-          "1587378057531"
-        ],
-        "settings": {
-          "title": "Featured Collection",
-          "layout": "grid",
-          "collection": "dessert",
-          "product_count": 5,
-          "cta_label": "Shop collection",
-          "cta_button_style": "primary"
-        }
-      },
-      "1493171740659": {
-        "type": "dynamic-blog-posts",
-        "settings": {
-          "title": "Blog Posts",
-          "blog": "",
-          "show_date": true,
-          "show_author": true,
-          "show_excerpt": true
-        }
-      },
-      "1493166188493": {
-        "type": "dynamic-menu-list",
-        "blocks": {
-          "1493166188493-0": {
-            "type": "menu",
-            "settings": {
-              "menu": "",
-              "image": ""
-            }
-          },
-          "1493166188493-1": {
-            "type": "menu",
-            "settings": {
-              "menu": "",
-              "image": ""
-            }
-          },
-          "1493166188493-2": {
-            "type": "menu",
-            "settings": {
-              "menu": "",
-              "image": ""
-            }
-          }
-        },
-        "block_order": [
-          "1493166188493-0",
-          "1493166188493-1",
-          "1493166188493-2"
-        ],
-        "settings": {
-          "title": "Menu list"
+          "slideshow_height": "original"
         }
       },
       "static-product": {
@@ -629,61 +352,13 @@
           "layout": "layout--two-col",
           "show_dcb": false,
           "product_cart_redirect": false,
-          "gallery_aspect_ratio": "natural",
+          "gallery_aspect_ratio": "short",
           "gallery_image_crop": false,
           "gallery_thumbnail_position": "below",
-          "gallery_video_autoplay": true,
-          "gallery_video_looping": true,
+          "gallery_video_autoplay": false,
+          "gallery_video_looping": false,
           "gallery_hover_zoom": "disabled",
           "gallery_click_to_zoom": "always"
-        }
-      },
-      "1540247561673": {
-        "type": "dynamic-promo-grid",
-        "blocks": {
-          "1540247561673-0": {
-            "type": "promotion",
-            "settings": {
-              "image": "",
-              "title": "Grid",
-              "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-              "color": "#4d4d4d",
-              "block_link": "",
-              "button_text": "",
-              "button_style": "primary",
-              "promo_width": "half-width",
-              "show_overlay": false,
-              "background": "",
-              "opacity": 50
-            }
-          },
-          "1540247561673-1": {
-            "type": "promotion",
-            "settings": {
-              "image": "",
-              "title": "Grid",
-              "text": "Use this section to welcome customers to your store, say a bit about your brand, or share news.",
-              "color": "#4d4d4d",
-              "block_link": "",
-              "button_text": "",
-              "button_style": "primary",
-              "promo_width": "half-width",
-              "show_overlay": false,
-              "background": "#ee3224",
-              "opacity": 50
-            }
-          }
-        },
-        "block_order": [
-          "1540247561673-0",
-          "1540247561673-1"
-        ],
-        "settings": {
-          "title": "",
-          "section_height": "small",
-          "text_alignment": "top-left",
-          "maintain_aspect_ratio": false,
-          "compress_blocks": false
         }
       },
       "static-announcement": {
@@ -691,11 +366,11 @@
         "settings": {
           "show_announcement": false,
           "homepage_announcement": false,
-          "announcement_text": "",
+          "announcement_text": "Code Promo SALE10",
           "announcement_text_mobile": "",
           "announcement_link": "",
           "announcement_color": "#ffffff",
-          "announcement_background": ""
+          "announcement_background": "#ff0000"
         }
       },
       "static-product-recommendations": {
@@ -713,7 +388,7 @@
       "static-recently-viewed": {
         "type": "static-recently-viewed",
         "settings": {
-          "enable_recently_viewed_products": true
+          "enable_recently_viewed_products": false
         }
       },
       "static-cart": {
@@ -722,7 +397,7 @@
           "1587380482076": {
             "type": "richtext",
             "settings": {
-              "richtext": "<p>Nous sommes tr&egrave;s attentifs aux condition d'hygi&egrave;ne et de s&eacute;curit&eacute; en cette p&eacute;riode de COVID-19.<\/p>\n<p><\/p>\n<p>C'est pourquoi nous avons mis en place un service de livraison &agrave; domicile et un service de retrait en magasin.<\/p>"
+              "richtext": "<p>Le minimum de commande est de 60&euro;.<br><br>Les frais de port s&rsquo;&eacute;l&egrave;vent &agrave;:<br>- 20&euro; pour les commandes entre 60 et 100&euro;.<br>- Gratuit pour les commandes de plus de 100&euro;.<\/p>"
             }
           },
           "1587380558353": {
@@ -741,19 +416,191 @@
           "enable_shipping_calc": true,
           "shipping_calc_default_country": "United States"
         }
+      },
+      "1587381412744": {
+        "type": "dynamic-featured-collection",
+        "settings": {
+          "title": "Les Desserts",
+          "layout": "grid",
+          "collection": "dessert",
+          "product_count": 15,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier"
+        }
+      },
+      "1587390787908": {
+        "type": "dynamic-featured-collection",
+        "settings": {
+          "title": "Les Classiques",
+          "layout": "grid",
+          "collection": "classique",
+          "product_count": 25,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier"
+        }
+      },
+      "1587395043257": {
+        "type": "dynamic-featured-collection",
+        "blocks": {
+          "1587395908764": {
+            "type": "title_card",
+            "settings": {
+              "position": "beginning",
+              "pre_heading": "Shop this",
+              "heading": "Collection",
+              "text_color": "#ffffff",
+              "overlay_color": "#000000",
+              "overlay_opacity": 50,
+              "image": ""
+            }
+          }
+        },
+        "block_order": [
+          "1587395908764"
+        ],
+        "settings": {
+          "title": "Les Incontournables",
+          "layout": "grid",
+          "collection": "incontournable",
+          "product_count": 25,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier"
+        }
+      },
+      "1587395142876": {
+        "type": "dynamic-featured-collection",
+        "blocks": {
+          "1587395212777": {
+            "type": "title_card",
+            "settings": {
+              "position": "beginning",
+              "pre_heading": "Shop this",
+              "heading": "Collection",
+              "text_color": "#ffffff",
+              "overlay_color": "#000000",
+              "overlay_opacity": 50,
+              "image": ""
+            }
+          }
+        },
+        "block_order": [
+          "1587395212777"
+        ],
+        "settings": {
+          "title": "Boulangerie",
+          "layout": "grid",
+          "collection": "boulangerie",
+          "product_count": 5,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier"
+        }
+      },
+      "1587395478095": {
+        "type": "dynamic-featured-collection",
+        "settings": {
+          "title": "Les Poissons",
+          "layout": "grid",
+          "collection": "poisson",
+          "product_count": 5,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier"
+        }
+      },
+      "1587395543472": {
+        "type": "dynamic-featured-collection",
+        "settings": {
+          "title": "Les Viandes",
+          "layout": "grid",
+          "collection": "viande",
+          "product_count": 5,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier"
+        }
+      },
+      "1587395792520": {
+        "type": "dynamic-featured-collection",
+        "settings": {
+          "title": "Les Plateaux",
+          "layout": "grid",
+          "collection": "les-plateaux",
+          "product_count": 5,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier"
+        }
+      },
+      "1587396804324": {
+        "type": "dynamic-featured-collection",
+        "settings": {
+          "title": "",
+          "layout": "grid",
+          "collection": "pack",
+          "product_count": 5,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier"
+        }
+      },
+      "1587474730394": {
+        "type": "dynamic-featured-product",
+        "settings": {
+          "product": "tarte-multi-fruits",
+          "show_dcb": true,
+          "product_cart_redirect": false,
+          "gallery_aspect_ratio": "natural",
+          "gallery_image_crop": false,
+          "gallery_thumbnail_position": "below",
+          "gallery_video_autoplay": true,
+          "gallery_video_looping": true,
+          "gallery_hover_zoom": "disabled"
+        }
+      },
+      "1587506198668": {
+        "type": "dynamic-rich-text",
+        "blocks": {
+          "1587506198668-0": {
+            "type": "text",
+            "settings": {
+              "title": "Bienvenue chez nous !",
+              "text": "<p>Envie d&rsquo;un plat maison mitonn&eacute; avec amour ? R&eacute;galez votre famille et simplifiez vous la vie.<br><br>Sp&eacute;cialis&eacute; dans la livraison aux particuliers, Tootim vous invite &agrave; profiter, chaque shabbat, d&rsquo;une carte riche en plats cuisin&eacute;s dans nos ateliers, frais, bons et de qualit&eacute;, livr&eacute;s directement chez vous ! <br><br>Nos menus sont en constante &eacute;volution et comprennent une grande vari&eacute;t&eacute; d&rsquo;entr&eacute;es, de plats et de desserts vous permettant de diversifier vos commandes et de choisir les plats correspondant le plus pr&eacute;cis&eacute;ment &agrave; vos go&ucirc;ts. Tootim: fraicheur, qualit&eacute; et bon go&ucirc;t au rendez-vous.<\/p>",
+              "heading_size": "large",
+              "text_alignment": "center"
+            }
+          }
+        },
+        "block_order": [
+          "1587506198668-0"
+        ],
+        "settings": {
+          "width": "wide"
+        }
       }
     },
     "content_for_index": [
-      "1493143038057",
-      "1493145778308",
-      "1540247561673",
-      "1493163784784",
-      "1520634789686",
-      "1521054862775",
-      "1493166188493",
-      "1493171740659",
-      "1498182734213",
-      "1517239645202"
+      "1587506198668",
+      "1587396804324",
+      "1587390787908",
+      "1587395043257",
+      "1587395792520",
+      "1587395478095",
+      "1587395543472",
+      "1587395142876",
+      "1587474730394",
+      "1587381412744"
     ]
   },
   "presets": {

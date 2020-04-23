@@ -857,18 +857,18 @@ $color-text: #4d4d4d;
 $color-text-encoded: "4d4d4d";
 $color-text-hover: morph($color-text, 5);
 $color-text-light: #949494;
-$color-link: #e32619;
+$color-link: #030303;
 $color-link-hover: morph($color-link, 3);
 
 // Buttons
-$color-button-text: #ffffff;
-$color-button-background: #e3be19;
+$color-button-text: #4d4d4d;
+$color-button-background: #f8e865;
 $color-button-background-hover: mix($color-background, $color-button-background, 10%);
 $color-button-background-focus: morph($color-button-background);
 $color-button-disable: desaturate($color-button-background, 100%);
 
 $color-button-secondary-text: #f7f7f7;
-$color-button-secondary-background: #23c1e8;
+$color-button-secondary-background: #7c9d50;
 $color-button-secondary-background-hover: mix($color-background, $color-button-secondary-background, 10%);;
 $color-button-secondary-background-focus: morph($color-button-secondary-background);
 $color-button-secondary-border: #dddddd;
@@ -885,7 +885,7 @@ $color-input-background: #ffffff;
 $color-input-border: #dddddd;
 $color-input-border-hover: morph($color-input-border, 2);
 
-$color-product-sale-accent: #e32619;
+$color-product-sale-accent: #000000;
 $color-product-review-star: #f6c347;
 
 // Footer

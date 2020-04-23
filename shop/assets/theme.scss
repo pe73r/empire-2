@@ -1452,18 +1452,18 @@ $color-text: #4d4d4d;
 $color-text-encoded: "4d4d4d";
 $color-text-hover: morph($color-text, 5);
 $color-text-light: #949494;
-$color-link: #e32619;
+$color-link: #030303;
 $color-link-hover: morph($color-link, 3);
 
 // Buttons
-$color-button-text: #ffffff;
-$color-button-background: #e3be19;
+$color-button-text: #4d4d4d;
+$color-button-background: #f8e865;
 $color-button-background-hover: mix($color-background, $color-button-background, 10%);
 $color-button-background-focus: morph($color-button-background);
 $color-button-disable: desaturate($color-button-background, 100%);
 
 $color-button-secondary-text: #f7f7f7;
-$color-button-secondary-background: #23c1e8;
+$color-button-secondary-background: #7c9d50;
 $color-button-secondary-background-hover: mix($color-background, $color-button-secondary-background, 10%);;
 $color-button-secondary-background-focus: morph($color-button-secondary-background);
 $color-button-secondary-border: #dddddd;
@@ -1480,7 +1480,7 @@ $color-input-background: #ffffff;
 $color-input-border: #dddddd;
 $color-input-border-hover: morph($color-input-border, 2);
 
-$color-product-sale-accent: #e32619;
+$color-product-sale-accent: #000000;
 $color-product-review-star: #f6c347;
 
 // Footer
@@ -14744,7 +14744,7 @@ $pswp__assets-path: '' !default; // path to skin assets folder (preloader, PNG a
 $pswp__error-text-color: #CCC !default; // "Image not loaded" text color
 $pswp__include-minimal-style: true !default;
 
- 
+
 /* pswp = photoswipe */
 .pswp {
 	display: none;
@@ -14766,7 +14766,7 @@ $pswp__include-minimal-style: true !default;
 			box-sizing: border-box;
 		}
 	}
-	
+
 	img {
 		max-width: none;
 	}
@@ -14833,7 +14833,7 @@ $pswp__include-minimal-style: true !default;
 }
 
 .pswp__container,
-.pswp__zoom-wrap { 
+.pswp__zoom-wrap {
 	touch-action: none;
 	position: absolute;
 	left: 0;
@@ -14970,7 +14970,7 @@ $pswp__include-minimal-style: true !default;
 
 
 /*
-	
+
 	1. Buttons
 
  */
@@ -14997,7 +14997,7 @@ $pswp__include-minimal-style: true !default;
 	&:hover {
 		opacity: 1;
 	}
-	
+
 	&:active {
 		outline: none;
 		opacity: 0.9;
@@ -15075,7 +15075,7 @@ $pswp__include-minimal-style: true !default;
 .pswp--touch {
 	.pswp__button--arrow--left,
 	.pswp__button--arrow--right {
-		visibility: hidden;		
+		visibility: hidden;
 	}
 }
 
@@ -15183,12 +15183,12 @@ $pswp__include-minimal-style: true !default;
 			color: #000;
 		}
 
-		
+
 		&:first-child {
 			/* round corners on the first/last list item */
 			border-radius: 2px 2px 0 0;
 		}
-		
+
 		&:last-child {
 			border-radius: 0 0 2px 2px;
 		}
@@ -15275,7 +15275,7 @@ a.pswp__share--download {
 
 
 /*
-	
+
 	4. Caption
 
  */
@@ -15286,7 +15286,7 @@ a.pswp__share--download {
 	bottom: 0;
 	width: 100%;
 	min-height: 44px;
-	
+
 	small {
 		font-size: 11px;
 		color: #BBB;
@@ -15329,7 +15329,7 @@ a.pswp__share--download {
 	left: 50%;
 	margin-left: -22px;
 	opacity: 0;
-	transition: opacity 0.25s ease-out; 
+	transition: opacity 0.25s ease-out;
 	will-change: opacity;
 	direction: ltr;
 }
@@ -15361,7 +15361,7 @@ a.pswp__share--download {
 			animation: donut-rotate 1000ms cubic-bezier(.4,0,.22,1) infinite;
 		}
 	}
-	
+
 	.pswp__preloader__icn {
 		background: none;
 		opacity: 0.75;
@@ -15373,10 +15373,10 @@ a.pswp__share--download {
 		margin: 0;
 	}
 
-	
+
 	.pswp__preloader__cut {
-		/* 
-			The idea of animating inner circle is based on Polymer ("material") loading indicator 
+		/*
+			The idea of animating inner circle is based on Polymer ("material") loading indicator
 			 by Keanu Lee https://blog.keanulee.com/2014/10/20/the-tale-of-three-spinners.html
 		*/
 		position: relative;
@@ -15424,7 +15424,7 @@ a.pswp__share--download {
 
 
 /*
-	
+
 	6. Additional styles
 
  */
@@ -15450,7 +15450,7 @@ a.pswp__share--download {
 .pswp__top-bar,
 .pswp--has_mouse .pswp__button--arrow--left,
 .pswp--has_mouse .pswp__button--arrow--right {
-	-webkit-backface-visibility: hidden; 
+	-webkit-backface-visibility: hidden;
 	will-change: opacity;
 	transition: opacity $pswp__controls-transition-duration cubic-bezier(.4,0,.22,1);
 }
@@ -15477,10 +15477,10 @@ a.pswp__share--download {
 }
 
 /* pswp__ui--idle class is added when mouse isn't moving for several seconds (JS option timeToIdle) */
-	
+
 .pswp__ui--idle {
-	.pswp__top-bar { 
-		opacity: 0; 
+	.pswp__top-bar {
+		opacity: 0;
 	}
 
 	.pswp__button--arrow--left,
@@ -15499,7 +15499,7 @@ a.pswp__share--download {
 	.pswp__button--arrow--left,
 	.pswp__button--arrow--right {
 		/* Force paint & create composition layer for controls. */
-		opacity: 0.001; 
+		opacity: 0.001;
 	}
 }
 
@@ -16784,7 +16784,7 @@ $local-expander-width: rem(70px);
   .share-buttons--twitter {
     background-color: $color-twitter;
   }
-  
+
   .share-buttons--linkedin {
     background-color: $color-linkedin;
   }
@@ -18049,3 +18049,99 @@ $local-link-space: 13px;
   }
 }
 
+// Quantity button ///
+
+.qtydiv label{
+  display: block;
+  margin-bottom: 12px;
+  letter-spacing: 2.8px;
+  color: #747a7b;
+}
+.qtydiv .btnqty{
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  font-size: 25px;
+  padding: 5px;
+  line-height: 5px;
+}
+.qtydiv .btnqty.qtyminus{
+  margin-right: 8px;
+}
+.qtydiv .btnqty.qtyplus{
+  margin-left: 8px;
+}
+.qtydiv .quantity-input{
+
+  border: none;
+  padding: 8px;
+  text-align: center;
+  width: 50px;
+  outline: none;
+  display: inline-block;}
+
+.qtydiv {
+  display: inline-block;
+
+}
+
+.FeaturedCollectionForm{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.FeaturedCollectionButton{
+    cursor: pointer;
+    padding: 10px 18px;
+    background-color: $color-button-background;
+    border: none;
+    color: $color-button-text;
+    border-radius: 3px;
+    width: 100%;
+    margin: 0px auto;
+    margin-top: 10px;
+     &:hover{
+         background-color: $color-button-background-hover;
+     }
+}
+
+
+// slide cart  //
+
+.slidecarthq{
+  header{
+    .cart-count{
+      display: none;
+    }
+  }
+}
+
+html body #slidecarthq{
+  footer{
+    .button {
+      background-color: $color-button-background;
+      color: $color-button-text;
+        &:not(.disabled):hover {
+          background: $color-button-background-hover;
+        }
+    }
+  }
+}
+
+// no search bar  //
+
+.only-desktop{
+  display: block;
+}
+
+@include media($max: $bp-large) {
+  .only-desktop{
+    display: none;
+  } 
+}
+
+.fake-searchBox {
+    width: 70%;
+    min-width: 300px;
+    height: 46px;
+  }

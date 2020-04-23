@@ -1,3 +1,15 @@
+
+// custom fonts ///
+
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+
+$font-family-custom-1: 'Oswald', sans-serif; // product title //  
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+$font-family-custom-2: 'Quicksand', sans-serif;   // product title //
+
+
 // {% assign font_settings = 'type_body:bolder|type_heading:bolder,lighter|type_button|type_menu|type_section:bold' %}
 {% assign font_settings = font_settings | split: '|' %}
 {% assign font_scss_variables = '' %}
@@ -17603,10 +17615,11 @@ $local-link-space: 13px;
     background-color: $color-button-background;
     border: none;
     color: $color-button-text;
-    border-radius: 3px;
+    border-radius: 2px;
     width: 100%;
     margin: 0px auto;
     margin-top: 10px;
+    font-size: 14px;
      &:hover{
          background-color: $color-button-background-hover;
      }
@@ -17644,7 +17657,7 @@ html body #slidecarthq{
 @include media($max: $bp-large) {
   .only-desktop{
     display: none;
-  } 
+  }
 }
 
 .fake-searchBox {
@@ -17652,3 +17665,42 @@ html body #slidecarthq{
     min-width: 300px;
     height: 46px;
   }
+
+
+.variants--button{
+  width: 100%;
+
+}
+
+.GridItemBox {
+   min-height: 100px;
+}
+
+.GridItemButtons{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.productitem--title{
+  min-height: 40px;
+}
+
+.relative{
+  position: relative;
+}
+
+.remove{
+  cursor: pointer;
+}
+
+.productitem--title{
+  font-family: $font-family-custom-1;
+}
+
+.productitem--price {
+  font-family: $font-family-custom-2;
+}
