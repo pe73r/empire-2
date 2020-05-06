@@ -75,7 +75,27 @@
             {{ item.original_price | money }}
           {%- endif %}
         </span>
+
       </div>
+
+      <!-- cart inventory -->
+      <div class="CartInventory">
+          {% if item.product.has_only_default_variant and item.variant.inventory_quantity < 10 %}
+            <div class="cart-item--product-options">
+              <span class="cart-item--option-name">{{ 'product.status.inventory' | t }} {{ item.variant.inventory_quantity }} {{ 'product.status.stock' | t }}</span>
+            </div>
+          {% else %}
+            {% for option in item.product.options %}
+               {% if item.variant.inventory_quantity < 10 %}
+                  <div class="cart-item--product-options">
+                    <span class="cart-item--option-name">{{ 'product.status.inventory' | t }} {{ item.variant.inventory_quantity }} {{ 'product.status.stock' | t }}</span>
+                  </div>
+                {% endif %}
+            {% endfor %}
+          {% endif %}
+      </div>
+      <!-- cart metafield -->
+      
 
       {%- if item_has_discounts -%}
         <ul class="discount-list" aria-label="{{ 'product.general.discounts' | t }}">

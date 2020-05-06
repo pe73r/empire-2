@@ -3,11 +3,11 @@
 
 @import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
 
-$font-family-custom-1: 'Oswald', sans-serif; // product title //  
+$font-family-custom-1: 'Oswald', sans-serif; // product title //
 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
 
-$font-family-custom-2: 'Quicksand', sans-serif;   // product title //
+$font-family-custom-2: 'Quicksand', sans-serif;   // product price //
 
 
 // {% assign font_settings = 'type_body:bolder|type_heading:bolder,lighter|type_button|type_menu|type_section:bold' %}
@@ -17703,4 +17703,33 @@ html body #slidecarthq{
 
 .productitem--price {
   font-family: $font-family-custom-2;
+}
+
+.cart-dissabled{
+  display: flex;
+  flex-direction: column;
+}
+.button-disable{
+  @extend %button-base;
+  background-color: $color-button-disable;
+  border: none;
+  &:active,
+  &:focus {
+     background-color: $color-button-disable;
+     border: none;
+   }
+}
+
+.ProductGridInventory{
+  margin-top: 10px;
+  font-size: 0.775rem;
+  line-height: 1.5;
+}
+
+.ProductInventory{
+  margin-top: 15px;
+  font-size: 0.775rem;
+   span{
+      margin-bottom: 5px; 
+   }
 }

@@ -441,7 +441,10 @@
       "sold_out": "Épuisé"
     },
     "status": {
-      "sold_out": "Épuisé"
+      "sold_out": "Épuisé",
+      "inventory": "Il ne reste que",
+      "stock": "en stock",
+      "stock_of": "en stock de"
     },
     "media": {
       "view_in_your_space": "Voir dans votre espace"

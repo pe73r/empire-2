@@ -361,7 +361,10 @@
       "sold_out": "Sold out"
     },
     "status": {
-      "sold_out": "Sold out"
+      "sold_out": "Sold out",
+      "inventory": "Theres only",
+      "stock": "in stock",
+      "stock_of": "in stock of"
     },
     "color_swatches": {
       "swatches_count": {

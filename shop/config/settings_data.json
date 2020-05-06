@@ -1,21 +1,21 @@
 {
   "current": {
     "color_background": "#ffffff",
-    "color_headings": "#484848",
-    "color_text": "#4d4d4d",
+    "color_headings": "#3f4444",
+    "color_text": "#3f4444",
     "color_text_light": "#949494",
     "color_links": "#030303",
-    "color_button_background": "#f8e865",
-    "color_button_text": "#4d4d4d",
-    "color_button_secondary_background": "#7c9d50",
+    "color_button_background": "#f6c347",
+    "color_button_text": "#3f4444",
+    "color_button_secondary_background": "#405ab3",
     "color_button_secondary_text": "#f7f7f7",
-    "color_button_secondary_border": "#dddddd",
+    "color_button_secondary_border": "rgba(0,0,0,0)",
     "color_header_background": "#ffffff",
-    "color_header_text": "#484848",
-    "color_input_text": "#4d4d4d",
+    "color_header_text": "#3f4444",
+    "color_input_text": "#3f4444",
     "color_input_background": "#ffffff",
     "color_input_border": "#dddddd",
-    "color_product_sale_accent": "#000000",
+    "color_product_sale_accent": "#ca4c2c",
     "color_product_review_star": "#f6c347",
     "color_footer_background": "#ffffff",
     "color_footer_text": "#686868",
@@ -49,7 +49,7 @@
     "product_grid_emphasize_price": false,
     "product_grid_image_style": "natural",
     "product_grid_image_crop": false,
-    "product_grid_show_quickshop": "disabled",
+    "product_grid_show_quickshop": "always",
     "product_grid_show_atc": "disabled",
     "quickshop_show_dcb": false,
     "quickshop_product_cart_redirect": true,
@@ -82,9 +82,9 @@
     "continue_url_cart": true,
     "continue_url_404": true,
     "checkout_header_image": "",
-    "checkout_logo_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/Logo-TUTIM-TOUT-ROUGE-avec-signature.png",
     "checkout_logo_position": "left",
-    "checkout_logo_size": "medium",
+    "checkout_logo_size": "large",
     "checkout_body_background_image": "",
     "checkout_body_background_color": "#fff",
     "checkout_input_background_color_mode": "white",
@@ -92,9 +92,9 @@
     "checkout_sidebar_background_color": "#fafafa",
     "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
     "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-    "checkout_accent_color": "#197bbd",
-    "checkout_button_color": "#197bbd",
-    "checkout_error_color": "#e32c2b",
+    "checkout_accent_color": "#405ab3",
+    "checkout_button_color": "#405ab3",
+    "checkout_error_color": "#c74b27",
     "product_enable_recently_viewed_products": true,
     "product_slideshow_style": "natural",
     "gallery_thumbnail_position": "below",
@@ -119,40 +119,12 @@
     "sections": {
       "static-header": {
         "type": "static-header",
-        "blocks": {
-          "1517255946962": {
-            "type": "meganav_images",
-            "settings": {
-              "meganav_trigger": "",
-              "image_1": "",
-              "text_1": "",
-              "link_1": "",
-              "position_1": "first",
-              "size_1": "small",
-              "image_2": "",
-              "text_2": "",
-              "link_2": "",
-              "position_2": "first",
-              "size_2": "small"
-            }
-          },
-          "1572476394007": {
-            "type": "multi_column_menu",
-            "settings": {
-              "menu_trigger": ""
-            }
-          }
-        },
-        "block_order": [
-          "1517255946962",
-          "1572476394007"
-        ],
         "settings": {
           "sticky_header": true,
           "full_width_header": false,
-          "logo": "",
-          "logo_height": 40,
-          "logo_width": 150,
+          "logo": "shopify:\/\/shop_images\/Logo-TUTIM-TOUT-ROUGE-avec-signature.png",
+          "logo_height": 65,
+          "logo_width": 200,
           "show-search": true,
           "filter_search_by": "disabled",
           "enable_live_search": true,
@@ -161,11 +133,11 @@
           "enable_live_search_articles_pages": false,
           "quick_links": "main-menu",
           "menu": "main-menu",
-          "small_promo_heading": "Livraison gratuite",
-          "small_promo_text": "<p>&agrave; partir de 100&euro; d'achat<\/p>",
-          "small_promo_text_mobile": "<p>&agrave; partir de 100&euro; d'achat<\/p>",
+          "small_promo_heading": "01 84 60 25 51",
+          "small_promo_text": "<p>Lundi &agrave; Vendredi, 9h\/18h<\/p>",
+          "small_promo_text_mobile": "<p>Lundi &agrave; Vendredi, 9h\/18h<\/p>",
           "small_promo_link": "",
-          "small_promo_icon": "icon-delivery",
+          "small_promo_icon": "icon-cell-phone",
           "image": ""
         }
       },
@@ -183,25 +155,19 @@
       "static-footer": {
         "type": "static-footer",
         "blocks": {
-          "1493171899575": {
-            "type": "social_accounts",
-            "settings": {
-            }
-          },
-          "static-footer-1": {
+          "1587667166823": {
             "type": "newsletter",
             "settings": {
-              "title": "Subscribe",
-              "text": "<p>Invite customers to join your mailing list.<\/p>"
+              "title": "Recevez chaque semaine notre nouveau menu",
+              "text": ""
             }
           }
         },
         "block_order": [
-          "1493171899575",
-          "static-footer-1"
+          "1587667166823"
         ],
         "settings": {
-          "payment_icons": false,
+          "payment_icons": true,
           "show_locale_selector": false,
           "show_currency_selector": false,
           "additional_menu": "footer"
@@ -214,48 +180,48 @@
             "type": "highlight",
             "settings": {
               "icon": "icon-store",
-              "image": "",
-              "title": "1. Commandez",
-              "text": "<p>When you spend $100+<\/p>",
-              "link": ""
-            }
-          },
-          "static-highlights-banners-1": {
-            "type": "highlight",
-            "settings": {
-              "icon": "icon-store",
-              "image": "",
-              "title": "2. Give Us A Call",
-              "text": "<p>+1 (201) 555-5555<\/p>",
+              "image": "shopify:\/\/shop_images\/Fichier_1_2x_04971700-7f83-4317-99e0-024d2e6c81c5.png",
+              "title": "Shabbat à la Carte",
+              "text": "<p>Plus de 50 plats&nbsp;vari&eacute;s<\/p>",
               "link": ""
             }
           },
           "static-highlights-banners-2": {
             "type": "highlight",
             "settings": {
-              "icon": "icon-chat-alternate",
-              "image": "",
-              "title": "Chat With Us",
-              "text": "<p>We offer 24-hour chat support<\/p>",
+              "icon": "icon-cell-phone",
+              "image": "shopify:\/\/shop_images\/Fichier_5_2x_4a00cd48-766d-4bf4-a34a-a90507205055.png",
+              "title": "Cacher Beth Din",
+              "text": "<p>Traiteur Cacher depuis 2016<\/p>",
               "link": ""
             }
           },
           "static-highlights-banners-3": {
             "type": "highlight",
             "settings": {
-              "icon": "icon-pin",
-              "image": "",
-              "title": "Locations",
-              "text": "<p>Find a store near you<\/p>",
+              "icon": "icon-delivery",
+              "image": "shopify:\/\/shop_images\/Fichier_3_2x_e4be38d7-2057-45f3-928d-3b734655cd45.png",
+              "title": "Paris et banlieues*",
+              "text": "<p>Vendredi avant 17h<\/p>",
+              "link": "shopify:\/\/pages\/comment-ca-marche"
+            }
+          },
+          "static-highlights-banners-1": {
+            "type": "highlight",
+            "settings": {
+              "icon": "icon-store",
+              "image": "shopify:\/\/shop_images\/Fichier_2_2x_c81b0066-1173-476b-901f-5110d7c854a1.png",
+              "title": "Avant Jeudi 18h",
+              "text": "<p>Commande&nbsp;&agrave; partir de&nbsp;60&euro;<\/p>",
               "link": ""
             }
           }
         },
         "block_order": [
           "static-highlights-banners-0",
-          "static-highlights-banners-1",
           "static-highlights-banners-2",
-          "static-highlights-banners-3"
+          "static-highlights-banners-3",
+          "static-highlights-banners-1"
         ],
         "settings": {
           "show_highlights_banner": true,
@@ -318,21 +284,21 @@
           "static-slideshow-0": {
             "type": "slide",
             "settings": {
-              "background_image": "shopify:\/\/shop_images\/Sans_titre_1.png",
-              "title": "Livraison Vendredi et proche banlieue",
-              "text": "Introduce customers to your shop with lifestyle and product imagery",
-              "color": "#ffffff",
+              "background_image": "shopify:\/\/shop_images\/Test2.jpg",
+              "title": "",
+              "text": "",
+              "color": "#f6c347",
               "link": "",
               "text_alignment": "left",
               "button_one_label": "",
-              "button_one_link": "",
-              "button_one_style": "primary",
+              "button_one_link": "shopify:\/\/pages\/comment-ca-marche",
+              "button_one_style": "secondary",
               "button_two_label": "",
               "button_two_link": "",
               "button_two_style": "primary",
-              "show_overlay": true,
-              "overlay_color": "#197bbd",
-              "overlay_opacity": 18
+              "show_overlay": false,
+              "overlay_color": "#3f4444",
+              "overlay_opacity": 50
             }
           }
         },
@@ -342,7 +308,7 @@
         "settings": {
           "show_slideshow": true,
           "enable_autoplay": false,
-          "autoplay_duration": 8,
+          "autoplay_duration": 5,
           "slideshow_height": "original"
         }
       },
@@ -366,11 +332,11 @@
         "settings": {
           "show_announcement": false,
           "homepage_announcement": false,
-          "announcement_text": "Code Promo SALE10",
-          "announcement_text_mobile": "",
+          "announcement_text": "Nous vous livrons",
+          "announcement_text_mobile": "10% offert à partir de 60€ sur votre commande avec le code FIRST10.",
           "announcement_link": "",
           "announcement_color": "#ffffff",
-          "announcement_background": "#ff0000"
+          "announcement_background": "#f4b91b"
         }
       },
       "static-product-recommendations": {
@@ -427,71 +393,40 @@
           "cta_label": "",
           "cta_button_style": "primary",
           "display-quantity": true,
-          "button-text": "Ajouter au panier"
+          "button-text": "Ajouter au panier",
+          "button-variants": "Choisissez les options"
         }
       },
       "1587390787908": {
         "type": "dynamic-featured-collection",
         "settings": {
-          "title": "Les Classiques",
+          "title": "Les Salades Fraîches",
           "layout": "grid",
           "collection": "classique",
           "product_count": 25,
           "cta_label": "",
           "cta_button_style": "primary",
           "display-quantity": true,
-          "button-text": "Ajouter au panier"
+          "button-text": "Ajouter au panier",
+          "button-variants": "Choisissez les options"
         }
       },
       "1587395043257": {
         "type": "dynamic-featured-collection",
-        "blocks": {
-          "1587395908764": {
-            "type": "title_card",
-            "settings": {
-              "position": "beginning",
-              "pre_heading": "Shop this",
-              "heading": "Collection",
-              "text_color": "#ffffff",
-              "overlay_color": "#000000",
-              "overlay_opacity": 50,
-              "image": ""
-            }
-          }
-        },
-        "block_order": [
-          "1587395908764"
-        ],
         "settings": {
-          "title": "Les Incontournables",
+          "title": "Les Entrées à Partager",
           "layout": "grid",
           "collection": "incontournable",
           "product_count": 25,
           "cta_label": "",
           "cta_button_style": "primary",
           "display-quantity": true,
-          "button-text": "Ajouter au panier"
+          "button-text": "Ajouter au panier",
+          "button-variants": "Choisissez les options"
         }
       },
       "1587395142876": {
         "type": "dynamic-featured-collection",
-        "blocks": {
-          "1587395212777": {
-            "type": "title_card",
-            "settings": {
-              "position": "beginning",
-              "pre_heading": "Shop this",
-              "heading": "Collection",
-              "text_color": "#ffffff",
-              "overlay_color": "#000000",
-              "overlay_opacity": 50,
-              "image": ""
-            }
-          }
-        },
-        "block_order": [
-          "1587395212777"
-        ],
         "settings": {
           "title": "Boulangerie",
           "layout": "grid",
@@ -500,73 +435,50 @@
           "cta_label": "",
           "cta_button_style": "primary",
           "display-quantity": true,
-          "button-text": "Ajouter au panier"
+          "button-text": "Ajouter au panier",
+          "button-variants": "Choisissez les options"
         }
       },
       "1587395478095": {
         "type": "dynamic-featured-collection",
         "settings": {
-          "title": "Les Poissons",
+          "title": "Les Poissons (par personne)",
           "layout": "grid",
           "collection": "poisson",
-          "product_count": 5,
+          "product_count": 25,
           "cta_label": "",
           "cta_button_style": "primary",
           "display-quantity": true,
-          "button-text": "Ajouter au panier"
+          "button-text": "Ajouter au panier",
+          "button-variants": "Choisissez les options"
         }
       },
       "1587395543472": {
         "type": "dynamic-featured-collection",
         "settings": {
-          "title": "Les Viandes",
+          "title": "Les Viandes (par personne)",
           "layout": "grid",
           "collection": "viande",
-          "product_count": 5,
+          "product_count": 25,
           "cta_label": "",
           "cta_button_style": "primary",
           "display-quantity": true,
-          "button-text": "Ajouter au panier"
+          "button-text": "Ajouter au panier",
+          "button-variants": "Choisissez les options"
         }
       },
       "1587395792520": {
         "type": "dynamic-featured-collection",
         "settings": {
-          "title": "Les Plateaux",
+          "title": "Les Plateaux Salés",
           "layout": "grid",
           "collection": "les-plateaux",
-          "product_count": 5,
+          "product_count": 25,
           "cta_label": "",
           "cta_button_style": "primary",
           "display-quantity": true,
-          "button-text": "Ajouter au panier"
-        }
-      },
-      "1587396804324": {
-        "type": "dynamic-featured-collection",
-        "settings": {
-          "title": "",
-          "layout": "grid",
-          "collection": "pack",
-          "product_count": 5,
-          "cta_label": "",
-          "cta_button_style": "primary",
-          "display-quantity": true,
-          "button-text": "Ajouter au panier"
-        }
-      },
-      "1587474730394": {
-        "type": "dynamic-featured-product",
-        "settings": {
-          "product": "tarte-multi-fruits",
-          "show_dcb": true,
-          "product_cart_redirect": false,
-          "gallery_aspect_ratio": "natural",
-          "gallery_image_crop": false,
-          "gallery_thumbnail_position": "below",
-          "gallery_video_autoplay": true,
-          "gallery_video_looping": true,
-          "gallery_hover_zoom": "disabled"
+          "button-text": "Ajouter au panier",
+          "button-variants": "Choisissez les options"
         }
       },
       "1587506198668": {
@@ -575,8 +487,8 @@
           "1587506198668-0": {
             "type": "text",
             "settings": {
-              "title": "Bienvenue chez nous !",
-              "text": "<p>Envie d&rsquo;un plat maison mitonn&eacute; avec amour ? R&eacute;galez votre famille et simplifiez vous la vie.<br><br>Sp&eacute;cialis&eacute; dans la livraison aux particuliers, Tootim vous invite &agrave; profiter, chaque shabbat, d&rsquo;une carte riche en plats cuisin&eacute;s dans nos ateliers, frais, bons et de qualit&eacute;, livr&eacute;s directement chez vous ! <br><br>Nos menus sont en constante &eacute;volution et comprennent une grande vari&eacute;t&eacute; d&rsquo;entr&eacute;es, de plats et de desserts vous permettant de diversifier vos commandes et de choisir les plats correspondant le plus pr&eacute;cis&eacute;ment &agrave; vos go&ucirc;ts. Tootim: fraicheur, qualit&eacute; et bon go&ucirc;t au rendez-vous.<\/p>",
+              "title": "Envie de plats maison mitonnés avec amour ? Régalez votre famille et simplifiez vous la vie.",
+              "text": "<p>Sp&eacute;cialis&eacute; dans la livraison aux particuliers, Tutim vous invite &agrave; profiter, chaque shabbat, d&rsquo;une carte riche en plats cuisin&eacute;s dans nos ateliers, frais, bons et de qualit&eacute;, livr&eacute;s directement chez vous ! <br><br>Nos menus sont en constante &eacute;volution et comprennent une grande vari&eacute;t&eacute; d&rsquo;entr&eacute;es, de plats et de desserts vous permettant de diversifier vos commandes et de choisir les plats correspondant le plus pr&eacute;cis&eacute;ment &agrave; vos go&ucirc;ts. Tutim: fra&icirc;cheur, qualit&eacute; et bon go&ucirc;t au rendez-vous.<\/p>",
               "heading_size": "large",
               "text_alignment": "center"
             }
@@ -588,19 +500,62 @@
         "settings": {
           "width": "wide"
         }
+      },
+      "1587745161522": {
+        "type": "dynamic-featured-collection",
+        "settings": {
+          "title": "Autres",
+          "layout": "grid",
+          "collection": "autre",
+          "product_count": 10,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier",
+          "button-variants": "Choisissez les options"
+        }
+      },
+      "1587856949776": {
+        "type": "dynamic-featured-collection",
+        "settings": {
+          "title": "Accompagnements (par personne)",
+          "layout": "grid",
+          "collection": "accompagnement",
+          "product_count": 25,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier",
+          "button-variants": "Choisissez les options"
+        }
+      },
+      "1587910349366": {
+        "type": "dynamic-featured-collection",
+        "settings": {
+          "title": "La Cave",
+          "layout": "grid",
+          "collection": "boisson",
+          "product_count": 25,
+          "cta_label": "",
+          "cta_button_style": "primary",
+          "display-quantity": true,
+          "button-text": "Ajouter au panier",
+          "button-variants": "Choisissez les options"
+        }
       }
     },
     "content_for_index": [
       "1587506198668",
-      "1587396804324",
       "1587390787908",
       "1587395043257",
       "1587395792520",
       "1587395478095",
       "1587395543472",
+      "1587856949776",
+      "1587381412744",
       "1587395142876",
-      "1587474730394",
-      "1587381412744"
+      "1587910349366",
+      "1587745161522"
     ]
   },
   "presets": {

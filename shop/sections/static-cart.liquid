@@ -69,6 +69,7 @@
       {% endif %}
     </div>
 
+    {% comment %}
     {% if has_items or show_continue_link %}
       <div class="cart-title-right">
         {% if has_items %}
@@ -82,6 +83,7 @@
             </div>
           </div>
 
+         {% if cart.total_price > 6000 %}
           <button
             class="button-primary cart-title-button"
             name="checkout"
@@ -95,11 +97,25 @@
             {% endif %}
             {{ 'cart.general.checkout' | t }}
           </button>
+         {% else %}
+         <div class="cart-dissabled">
+           <button class="button-disable cart-title-button">
+              {{ 'cart.general.checkout' | t }}
+           </button>
+           <p>votre commande doit être d'au moins 60 euros</p>
+         </div>
+
+
+         {% endif %}
+
         {% elsif show_continue_link %}
           {{ continue_link_html }}
         {% endif %}
+            
+
       </div>
     {% endif %}
+    {% endcomment %}
   </header>
 
   <section class="cartitems--container {% if has_sidebar %}has-sidebar{% endif %}">

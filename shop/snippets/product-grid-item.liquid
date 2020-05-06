@@ -220,9 +220,9 @@
     {{ recently_viewed_header }}
     <a
       class="productitem--image-link"
-      href="{{ product.url | within: collection }}"
+      href=""
       tabindex="-1"
-      data-product-page-link
+      data-quickshop-full
     >
       <figure class="productitem--image" data-product-item-image>
         {% if initial_image %}
@@ -359,7 +359,7 @@
                   {% if settings.gallery_thumbnail_position == 'left' %}data-thumbs-left{% endif %}
                   type="button"
                 >
-                   {{ section.settings.button-variants }}  
+                   {{ section.settings.button-variants }}
                 </button>
               </div>
             </div>
@@ -381,6 +381,11 @@
       </div>
     {% endif %}
 
+    {% if section.settings.show-inventory and product.first_available_variant.inventory_quantity < 10 %}
+      <div class="ProductGridInventory">
+        <span>{{ 'product.status.inventory' | t }} {{ product.first_available_variant.inventory_quantity }} {{ 'product.status.stock' | t }}</span>
+     </div>
+    {% endif %}
 
     {% unless recently_viewed %}
       {% if quick_shop_display != 'disabled' or atc_display != 'disabled' %}

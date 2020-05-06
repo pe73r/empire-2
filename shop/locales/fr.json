@@ -201,7 +201,7 @@
   "cart": {
     "general": {
       "your_cart": "Votre panier",
-      "continue_shopping": "Continue shopping",
+      "continue_shopping": "Continuez vos achats",
       "price": "Prix",
       "quantity": "Qté",
       "checkout": "Check-out",
@@ -439,7 +439,10 @@
       "sold_out": "Épuisé"
     },
     "status": {
-      "sold_out": "Épuisé"
+      "sold_out": "Épuisé",
+      "inventory": "Il ne reste que",
+      "stock": "en stock", 
+      "stock_of": "en stock de"
     },
     "color_swatches": {
       "swatches_count": {

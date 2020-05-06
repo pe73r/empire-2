@@ -104,6 +104,29 @@
       </span>
     </button>
   </div>
+  <div class="ProductInventory">
+    {% if product.variants.first.inventory_management == "shopify" %}
+      {% if product.has_only_default_variant and product.variants.first.inventory_quantity < 10 %}
+         <p>{{ 'product.status.inventory' | t }} {{ product.variants.first.inventory_quantity }} {{ 'product.status.stock' | t }}</p>
+      {% else %}
+        {% for variant in product.variants %}
+          {% if variant.inventory_quantity < 10 %}
+          <p>{{ 'product.status.inventory' | t }} {{ variant.inventory_quantity }} {{ 'product.status.stock_of' | t }} {{ variant.option1 }}</p>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+   {% endif %}
+  </div>
+     <!-- {% for variant in product.variants %}
+       <p class="description" id="">Description for variant 1</p>
+       <p class="description" id="" style="display: none;">Description for variant 2</p>
+       <p class="description" id="" style="display: none;">Description for variant 3</p>
+    {% endfor %}  -->
+
+  <script>
+      console.log({{ product | json }});
+  </script>
+
 
   {% if product_smart_buttons or quickshop_smart_buttons %}
     {{ form | payment_button }}
